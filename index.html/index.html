@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Student Website - ICT251</title>
+    <!-- Relative link to external CSS stylesheet as required -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Personal Student Website</h1>
+        <p>Mulungushi University | Department of Computer Science</p>
+    </header>
+
+    <!-- Navigation Section with working internal and external links -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#learning-plan">Learning Plan</a>
+        <a href="#photos">My Photos</a>
+        <a href="#media">My Media</a>
+        <a href="#contact">Contact</a>
+        <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs (External)</a>
+    </nav>
+
+    <!-- Main Content Area with Semantic Sections -->
+    <main>
+
+        <!-- About Me Section -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>Hello! My name is Taonga Kaonga, and I am an enthusiastic student currently pursuing a Bachelor of Science in Computer Science at Mulungushi University. I have a deep passion for technology, software development, and exploring how things work behind the scenes on the internet. Through this Web Technologies course, I am eager to expand my knowledge and master modern web standards to build responsive, accessible, and user-friendly websites that can solve real-world problems.</p>
+        </section>
+
+        <!-- My Hobbies Section -->
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <p>Here are a few things I enjoy doing in my free time:</p>
+            <ul>
+                <li>Reading technology blogs and sci-fi novels</li>
+                <li>Talking to girls and understanding their perspectives</li>
+                <li>Coding small JavaScript experiments and practicing HTML/CSS</li>
+            </ul>
+            <h3>Steps to Improve My Web Skills</h3>
+            <ol>
+                <li>Practice writing clean semantic HTML5 code daily.</li>
+                <li>Build at least two responsive web layouts using CSS Flexbox and Grid.</li>
+                <li>Complete online coding challenges and study JavaScript fundamentals.</li>
+                <li>Increase attendance in web development workshops and seminars.</li>
+            
+            </ol>
+        </section>
+
+        <!-- Learning Plan Section with Data Table -->
+        <section id="learning-plan" class="content-section">
+            <h2>My Learning Plan</h2>
+            <table>
+                <caption>Weekly Web Learning Plan</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML5 Semantics</td>
+                        <td>Restructure index.html with header, nav, main, and footer.</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS Box Model</td>
+                        <td>Apply padding, margin, and borders to content sections.</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Media & Forms</td>
+                        <td>Embed intro video and validate contact form fields.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- My Photos Section -->
+        <section id="photos" class="content-section">
+            <h2>Photo Gallery</h2>
+            <p>Here are some photos representing my student life and activities (Photos taken by me or shared with permission).</p>
+            <div class="gallery">
+                <figure>
+                    <img src="../images/photo1.jpg" alt="me enjoying my night by Nalochi Riverpark">
+                    <figcaption>Figure 1: Enjoying a peaceful evening by Nalochi.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/photo2.jpg" alt="A scenic view of Nalochi off Mulungushi University campus grounds">
+                    <figcaption>Figure 2: A peaceful afternoon view of Nalochi.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/photo3.jpg" alt="Me in chambeshi hostel after my first lecture on web technologies">
+                    <figcaption>Figure 3: After a successful class on web technologies.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- My Media Section -->
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+            
+            <div class="media-item">
+                <h3>Video Introduction</h3>
+                <video controls width="320" height="240">
+                    <source src="../videos/intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p><strong>Written Summary:</strong> In this short video, I introduce myself by name, state my Computer Science degree program, and mention my goal to learn CSS layout techniques.</p>
+            </div>
+
+            <div class="media-item">
+                <h3>Audio Clip</h3>
+                <audio controls>
+                    <source src="../videos/voice.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>This audio recording describes my enthusiasm for learning web technologies and building interactive websites.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch, please fill out the form below. <em>Note: This form is a browser demonstration only and does not send data (action="#").</em></p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">Topic:</label>
+                    <select id="topic" name="topic">
+                        <option value="general">General Inquiry</option>
+                        <option value="feedback">Website Feedback</option>
+                        <option value="collaboration">Project Collaboration</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                </div>
+
+                <button type="submit">Submit Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Student Personal Website. Created for ICT251 Web Technologies, Mulungushi University.</p>
+    </footer>
+
+</body>
+</html>
